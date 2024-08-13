@@ -121,6 +121,16 @@
           {{ site.website_title | default: "Web" }}: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
+      {%- if site.vcard_en -%}
+        <p>
+          {% include a.html href=site.vcard_en %}{{ site.vcard_en_title | default: "Save contact" }}</a>
+        </p>
+      {%- endif -%}
+      {%- if site.vcard_vi -%}
+        <p>
+          {% include a.html href=site.vcard_vi %}{{ site.vcard_vi_title | default: "Lưu danh bạ" }}</a>
+        </p>
+      {%- endif -%}
     </div>
   </div>
 </div>
